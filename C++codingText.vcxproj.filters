@@ -21,9 +21,15 @@
     <ClInclude Include="CodingXOR.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CodingCaesar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CodingXOR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CodingCaesar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
