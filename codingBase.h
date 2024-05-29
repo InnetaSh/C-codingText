@@ -2,13 +2,13 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class CodingText
+class CodingBase
 {
 protected:
 	string Text;
 	int key;
 public:
-	CodingText(string str, int n) :Text(str), key(n) {};
+	CodingBase(string str, int n) :Text(str), key(n) {};
 	virtual string Coding(string, int) = 0;
 	virtual string Decoding(string, int) = 0;
 };

@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="codingBase.h" />
+    <ClInclude Include="CodingBase.h" />
+    <ClInclude Include="CodingXOR.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CodingXOR.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
