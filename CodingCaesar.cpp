@@ -8,19 +8,10 @@ string CodingCaesar::Coding(string str, int key)
     {
         if (isalpha(str[i]))
         {
-
-            if (str[i] >= 65 && str[i] <= 90)
-            {
-                str[i] += key;
-                if (str[i] > 90)
-                    str[i] = str[i] - 2;
-            }
-            if (str[i] >= 97 && str[i] <= 122)
-            {
-                str[i] += key;
-                if (str[i] > 122)
-                    str[i] = str[i] - 26;
-            }
+                if (!isupper(str[i]))
+                    str[i] = ((str[i] - 'a' + key) % 26 + 'a');
+                else
+                    str[i] = ((str[i] - 'A' + key) % 26 + 'A');
         }
         newText += str[i];
     }
@@ -33,17 +24,12 @@ string CodingCaesar::Decoding(string str, int key)
     key = key % 26;
     for (int i = 0; i < str.length(); i++)
     {
-        if (str[i] >= 65 && str[i] <= 90)
+        if (isalpha(str[i]))
         {
-            str[i] -= key;
-            if (str[i] < 65)
-                str[i] = str[i] + 26;
-        }
-        if (str[i] >= 97 && str[i] <= 122)
-        {
-            str[i] -= key;
-            if (str[i] < 97)
-                str[i] = str[i] + 26;
+            if (!isupper(str[i]))
+                str[i] = ((str[i] - 'a' - key+26) % 26 + 'a');
+            else
+                str[i] = ((str[i] - 'A' - key+26) % 26 + 'A');
         }
         originText += str[i];
     }
