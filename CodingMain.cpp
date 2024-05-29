@@ -21,7 +21,7 @@ int main()
 	cout << "---------------------------------------------------\n";
 	cout << "Vvedit\' text dlya shufryvannia:\n";
 	string text1;
-	std::cin.ignore();
+	cin.ignore();
 	getline(cin, text1);
 
 	cout << "Vvedit\' klych dlya shufryvannia:\n";

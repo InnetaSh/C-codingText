@@ -1,5 +1,6 @@
 #pragma once
-#include "codingBase.h"
+#include "CodingBase.h"
+
 
 class CodingXOR :public CodingBase
 {
